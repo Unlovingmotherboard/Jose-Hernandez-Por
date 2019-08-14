@@ -3,6 +3,20 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+.myResponsiveImages {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px
+}
+
+
+p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2593,7 +2607,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul:not(.browser-default) {
@@ -2724,6 +2738,7 @@ img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
+  
 }
 
 .pagination li {
@@ -3929,7 +3944,7 @@ table span.badge {
     right: auto;
   }
   .row .col.l5 {
-    width: 41.6666666667%;
+    width: 33.666667%;
     margin-left: auto;
     left: auto;
     right: auto;
@@ -3995,7 +4010,7 @@ table span.badge {
     left: 16.6666666667%;
   }
   .row .col.offset-l3 {
-    margin-left: 25%;
+    margin-left: 32%;
   }
   .row .col.pull-l3 {
     right: 25%;
@@ -4004,7 +4019,7 @@ table span.badge {
     left: 25%;
   }
   .row .col.offset-l4 {
-    margin-left: 33.3333333333%;
+    margin-left: 39.8%;
   }
   .row .col.pull-l4 {
     right: 33.3333333333%;
@@ -4196,7 +4211,7 @@ table span.badge {
     left: 33.3333333333%;
   }
   .row .col.offset-xl5 {
-    margin-left: 41.6666666667%;
+    margin-left: 40.4%;
   }
   .row .col.pull-xl5 {
     right: 41.6666666667%;
@@ -4490,7 +4505,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -5170,7 +5185,7 @@ small {
   display: inline-block;
   height: 36px;
   line-height: 36px;
-  padding: 0 16px;
+  padding: 0 10px;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
@@ -5532,6 +5547,7 @@ button.btn-floating {
   height: 32.4px;
   line-height: 32.4px;
   font-size: 13px;
+  margin-left: 25px;
 }
 
 .btn-small i {
@@ -8486,10 +8502,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8542,10 +8567,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
