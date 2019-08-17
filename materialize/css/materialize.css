@@ -6,47 +6,55 @@
 
  #titleScreen {
    height: 1000px;
+   background-color: rgb(253, 193, 2);
+ }
+
+ #titleScreen > .animated {
+  font-size: 4em;
+  text-shadow: white 2px 2px 10px;
+ }
+
+ #titleScreen2 > .animated {
+  font-size: 8em;
+  text-shadow: white 2px 2px 10px;
+ }
+
+ #titleScreen2 {
+  display: flex;
+  flex-direction: row;
  }
 
 #helloD {
-  font-size: 4em;
   margin-top: 0px;
   margin-left: 10%;
 }
 
 #welcome {
-  font-size: 4em;
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 #youve {
-  font-size: 4em;
-  margin: 0px 0px 0px 30%;
+  margin: 0px 2% 0px 0px;
 }
-
 
 #come {
-font-size: 4em;
-margin: 0px 0px 0px 31%;
+margin: 0px 2% 0px 0px;
 }
+
 #to{
-font-size: 4em;
-margin: 0px 0px 0px 32%;
+margin: 0px 2% 0px 0px;
 }
 
 #the{
-font-size: 4em;
-margin: 0px 0px 0px 33%;
+margin: 0px 2% 0px 0px;
 }
 
 #right {
-font-size: 4em;
-margin: 0px 0px 0px 34%;
+margin: 0px 2% 0px 0px;
 }
 
 #place {
-font-size: 4em;
-margin: 0px 0px 0px 35%;
+margin: 0px 2% 0px 0px;
 }
 
 .projects {
@@ -121,6 +129,11 @@ margin: 0px 0px 0px 35%;
 
 @media only screen and (max-width: 375px) {
 
+  #titleScreen2 {
+    display: flex;
+    flex-direction: column;
+   }
+
   #helloD {
     font-size: 2em;
     margin-top: 0px;
@@ -129,42 +142,51 @@ margin: 0px 0px 0px 35%;
   
   #welcome {
     font-size: 3em;
-    margin-left: 25%;
+    margin-left: 10%;
   }
   
   #youve {
     font-size: 3em;
-    margin: 0px 0px 0px 30%;
+    margin: 0px 0px 0px 10%;
   }
 
 
 #come {
   font-size: 3em;
-  margin: 0px 0px 0px 31%;
+  margin: 0px 0px 0px 10%;
 }
 #to{
   font-size: 3em;
-  margin: 0px 0px 0px 32%;
+  margin: 0px 0px 0px 10%;
 }
 
 #the{
   font-size: 3em;
-  margin: 0px 0px 0px 33%;
+  margin: 0px 0px 0px 10%;
 }
 
 #right {
   font-size: 3em;
-  margin: 0px 0px 0px 34%;
+  margin: 0px 0px 0px 10%;
 }
+
+#titleScreen > .animated {
+  font-size: 4em;
+  
+ }
+
+ #titleScreen2 > .animated {
+  font-size: 4em;
+ }
 
 #place {
   font-size: 3em;
-  margin: 0px 0px 0px 35%;
+  margin: 0px 0px 0px 10%;
 }
 
 
   #titleScreen {
-    height: 812px;
+    height: auto;
   }
   
   .projects {
@@ -4684,9 +4706,10 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merriweather', serif;
+  /*MY CUSTOM FONT*/
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  color: white;
 }
 
 @media only screen and (min-width: 0) {

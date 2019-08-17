@@ -36,17 +36,22 @@
 }
 
  #linkdenIcon {
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-  }
-
-  #githubIcon {
     animation-duration: 3s;
     animation-iteration-count: infinite;
   }
 
+  #githubIcon {
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+  }
+
   #emailIcon {
-    animation-duration: 2.5s;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+  }
+
+  #resumeIcon {
+    animation-duration: 3.1s;
     animation-iteration-count: infinite;
   }
 
