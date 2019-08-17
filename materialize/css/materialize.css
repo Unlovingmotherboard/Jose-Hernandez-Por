@@ -19,9 +19,34 @@
   margin-left: 25%;
 }
 
-#rightPlace {
-  font-size: 5em;
-  margin-left: 60%;
+#youve {
+  font-size: 4em;
+  margin: 0px 0px 0px 30%;
+}
+
+
+#come {
+font-size: 4em;
+margin: 0px 0px 0px 31%;
+}
+#to{
+font-size: 4em;
+margin: 0px 0px 0px 32%;
+}
+
+#the{
+font-size: 4em;
+margin: 0px 0px 0px 33%;
+}
+
+#right {
+font-size: 4em;
+margin: 0px 0px 0px 34%;
+}
+
+#place {
+font-size: 4em;
+margin: 0px 0px 0px 35%;
 }
 
 .projects {
