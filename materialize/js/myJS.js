@@ -1,4 +1,3 @@
-
 /*
 $(document).ready(function() {
   // Check if element is scrolled into view
