@@ -7,6 +7,8 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!--Let browser know website is optimized for mobile-->
@@ -14,102 +16,88 @@
 </head>
 
 <body>
-    <div class="row">
-        <!--Profile Picture Row-->
-        <div class="center-align">
-            <img src="images/banner-under-construction.png" alt="" class="responseive-img myResponsiveImages">
-            <img src="images/mypfp.jpg" alt="" class="responseive-img circle">
-            <p>Jose Marin Hernandez </p>
-
-            <p>Full-Stack Web Developer from Houston, Texas.</p>
-
-            <p>"Arrogance & ignorance go hand in hand" - Metallica</p>
+    <div>
+        <div class="col s12 xl12 cyan darken-2" id="titleScreen">
+            <p class="animated bounceInDown" id="helloD">Hello :D</p>
+            <br>
+            <p class="animated bounceIn" id="welcome">Welcome</p>
+            <br>
+            <br>
+            <p class="animated bounceInRight" id="youve">You've</p>
+            <p class="animated bounceInRight" id="come">come</p>
+            <p class="animated bounceInRight" id="to">to</p>
+            <p class="animated bounceInRight" id="the">the</p>
+            <p class="animated bounceInRight" id="right">right</p>
+            <p class="animated bounceInRight" id="place">place</p>
         </div>
     </div>
-    <!--End of Profile Picture Row-->
-
-
-    <div class="row">
-        <div class="col s12 m6 offset-m3 l6 offset-l3 xl6 offset-xl5">
-            <a href="index.html" class="waves-effect waves-light btn-small">Projects</a>
-            <a href="about.html" class="waves-effect waves-light btn-small">About</a>
-            <a href="contact.html" class="waves-effect waves-light btn-small">Contact</a>
-        </div>
-    </div>
-    <!--End of Nav Bar Row-->
+    <!--Title-->
 
     <div class="row">
-        <!--Content-->
-        <div class="container">
-            <div class="center-align">
-                <h3>Houston Coding Bootcamp Projects</h3>
+        <section id="project1">
+            <div class="col s12 xl12 brown darken-2 projects">
+                    <p class="projectTitle center-align">Hiking Advisor</p>
+                    <p class="projectDesc center-align">This web application helps hikers choose a trail and date based on the user's destination and weather conditions.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="https://joshmunoz63.github.io/project-1/"><img src="./images/home screen test 1.png" alt="" class="responseive-img myResponsiveImages hoverable"></a> 
             </div>
-            <div class="col l12">
-                <div>
+        </section>
 
-                    <h3>Hiking Advisor</h3>
-                    <a href="https://github.com/Joshmunoz63/project-1"><img src="images/icons8-gradient-line-64.png"
-                            alt=""></a>
-                    <p>This web application helps hikers choose a trail and date based on the user's destination and
-                        weather conditions.</p>
-                    <a href="https://joshmunoz63.github.io/project-1/"><img
-                            class="responseive-img myResponsiveImages hoverable" src="images/home screen test 1.png"
-                            alt=""></a>
-                </div>
+        <section id="project2">
+            <div class="col s12 xl12 grey darken-2 projects">
+                    <p class="projectTitle center-align">Project 2</p>
+                    <p class="projectDesc center-align">Description</p>
+                    <a target="_blank" rel="noopener noreferrer" href=""><img src="./images/placeholder.jpg" alt="" class="responseive-img myResponsiveImages hoverable"></a>
+            </div>
+        </section>
 
-                <div>
-                    <h3>Project 2</h3>
-                    <a href="#"><img src="images/icons8-gradient-line-64.png"
-                            alt=""></a>
-                    <p>This web application helps hikers choose a trail and date based on the user's destination and
-                        weather conditions.</p>
-                    <a href="#"><img class="responseive-img myResponsiveImages hoverable" src="images/placeholder.jpg"
-                            alt=""></a>
-                </div>
+        <section>
+            <div class="col s12 xl12 deep-orange lighten-3 projects">
+                <p class="projectTitle center-align">Project 3</p>
+                <p class="projectDesc center-align">Description</p>
+                <a href=""><img src="./images/placeholder.jpg" alt="" class="responseive-img myResponsiveImages hoverable"></a>
+            </div>
+        </section>
+    </div>
+    <!--Projects-->
 
-                <div>
-                    <h3>Project 3</h3>
-                    <a href="#"><img src="images/icons8-gradient-line-64.png"
-                            alt=""></a>
-                    <p>This web application helps hikers choose a trail and date based on the user's destination and
-                        weather conditions.</p>
-                    <a href="#"><img class="responseive-img myResponsiveImages hoverable" src="images/placeholder.jpg"
-                            alt=""></a>
-                </div>
-
+    <div id="aboutMeAndPics">
+        <div class="row">
+            <div class="col s12 xl6 green darken-3 animated" id="aboutMePic">
+                    
             </div>
 
-            <div class="row">
-                    <div class="col s12 m9 l10">
-                      <div id="introduction" class="section scrollspy">
-                        <p>Content </p>
-                      </div>
-                
-                      <div id="structure" class="section scrollspy">
-                        <p>Content </p>
-                      </div>
-                
-                      <div id="initialization" class="section scrollspy">
-                        <p>Content </p>
-                      </div>
-                    </div>
-                    <div class="col hide-on-small-only m3 l2">
-                      <ul class="section table-of-contents">
-                        <li><a href="#introduction">Introduction</a></li>
-                        <li><a href="#structure">Structure</a></li>
-                        <li><a href="#initialization">Intialization</a></li>
-                      </ul>
-                    </div>
-                  </div>
+            <div class="col s12 xl6 lime darken-3 animated" id="aboutmeInfo">
+                <p id="aboutMeNameTitle" class="center-align">Jose Marin Hernandez</p>
+                <p class="center-align" id="aboutMeParagraph">Aenean eget risus quis lacus eleifend vestibulum. Nullam laoreet eros at blandit consequat. Integer a porta ipsum. Praesent scelerisque maximus quam, at ultrices libero feugiat id. Aenean nec ante vitae eros feugiat consectetur nec vel neque. Sed auctor nulla quis auctor malesuada. Fusce porta condimentum suscipit. Sed vestibulum facilisis turpis et tempus.</p>
+            </div>
         </div>
+        <!--About me-->
     </div>
+
+    <div id="contact">
+        <div class="row">
+            <div class="col s12 xl4 orange lighten-2 icon" id="linkden">
+               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jose-hernandez-97b09216b/"><img src="./images/iconfinder_square-linkedin_317725.png" alt="" class="animated swing" id="linkdenIcon"></a> 
+            </div>
+
+            <div class="col s12 xl4 amber lighten-2 icon" id="github">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Unlovingmotherboard"><img src="./images/iconfinder_github_245991.png" alt="" class="animated swing" id="githubIcon"></a> 
+            </div>
+
+            <div class="col s12 xl4 yellow lighten-2 icon" id="email">
+               <a href="mailto: jmhern25@yahoo.com"><img src="./images/iconfinder_39_Email_Marketing_1688837.png" alt="" class="animated swing" id="emailIcon"></a> 
+            </div>
+        </div>
+        <!--Contact-->
+    </div>
+
+
     <!--End of Content-->
 
-
-
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="materialize/js/myJS.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    
 </body>
 
 </html>

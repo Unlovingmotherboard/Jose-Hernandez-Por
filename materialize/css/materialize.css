@@ -3,17 +3,171 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+ #titleScreen {
+   height: 1000px;
+ }
+
+#helloD {
+  font-size: 4em;
+  margin-top: 0px;
+  margin-left: 10%;
+}
+
+#welcome {
+  font-size: 4em;
+  margin-left: 25%;
+}
+
+#rightPlace {
+  font-size: 5em;
+  margin-left: 60%;
+}
+
+.projects {
+  height: auto;
+}
+
+.projectTitle {
+  font-size: 4em;
+  margin: 0;
+}
+
+.projectDesc {
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+
 .myResponsiveImages {
   width: 100%;
   height: auto;
   margin-bottom: 20px
 }
 
-
-p {
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+#aboutMePic {
+  height: 700px;
+  background-image: url("../../images/portfoliopic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+#slideshowPics {
+  height: 400px;
+}
+
+#aboutmeInfo {
+  height: 700px;
+}
+
+#aboutMeNameTitle {
+  font-size: 4em;
+  margin: 0;
+}
+
+#aboutMeParagraph {
+  font-size: 1.7em;
+}
+
+
+#linkden {
+  height: 200px;
+}
+
+#github {
+  height: 200px;
+}
+
+#email {
+  height: 200px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-padding-bottom {padding:0px !important}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+  #helloD {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-left: 10%;
+  }
+  
+  #welcome {
+    font-size: 3em;
+    margin-left: 25%;
+  }
+  
+  #youve {
+    font-size: 3em;
+    margin: 0px 0px 0px 30%;
+  }
+
+
+#come {
+  font-size: 3em;
+  margin: 0px 0px 0px 31%;
+}
+#to{
+  font-size: 3em;
+  margin: 0px 0px 0px 32%;
+}
+
+#the{
+  font-size: 3em;
+  margin: 0px 0px 0px 33%;
+}
+
+#right {
+  font-size: 3em;
+  margin: 0px 0px 0px 34%;
+}
+
+#place {
+  font-size: 3em;
+  margin: 0px 0px 0px 35%;
+}
+
+
+  #titleScreen {
+    height: 812px;
+  }
+  
+  .projects {
+    height: auto;
+  }
+
+  #aboutMePic {
+    height: 400px;
+  }
+
+  #aboutmeInfo {
+    height: 400px;
+  }
+
+  #aboutMeNameTitle {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #aboutMeParagraph {
+    font-size: 1.1em;
+  }
+
+}
+
+
+
+
 
 
 
@@ -3486,7 +3640,7 @@ table span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .row:after {
