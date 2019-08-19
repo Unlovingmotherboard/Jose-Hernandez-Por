@@ -8,32 +8,84 @@
  * Copyright (c) 2019 Daniel Eden
  */
 
-#welcome {
-    animation-delay: 2s;
-}
-
-#youve {
-    animation-delay: 3s;
+ #youve {
+    animation-delay: 1s;
 }
 
 #come {
-    animation-delay: 3.1s;
+    animation-delay: 1.1s;
 }
 #to{
-    animation-delay: 3.2s;
+    animation-delay: 1.2s;
 }
 
 #the{
-    animation-delay: 3.3s;
+    animation-delay: 1.3s;
 }
 
 #right {
-    animation-delay: 3.4s;
+    animation-delay: 1.4s;
 }
 
 #place {
-    animation-delay: 3.5s;
+    animation-delay: 1.5s;
 }
+
+.imaginativeMyAnimation {
+    animation-name: bounceIn, tada;
+    -webkit-animation-name: bounceIn, tada;
+
+    animation-delay: 2s, 2.1s;
+    -webkit-animation-duration: 2s, 2.1s;
+}
+
+#imaginativeComma {
+    animation-delay: 2.2s;
+}
+
+.awesomeMyAnimation {
+    animation-name: bounceIn, rotateIn;
+    -webkit-animation-name: bounceIn, rotateIn;
+
+    animation-delay: 3s, 3.1s;
+    -webkit-animation-duration: 3s, 3.1s;
+}
+
+
+#awesomeComma {
+    animation-delay: 3.2s;
+}
+
+.freshMyAnimation {
+    animation-name: zoomIn;
+    -webkit-animation-name: zoomIn;
+
+    animation-delay: 4.7s;
+    -webkit-animation-duration: 4.7s;
+}
+
+#freshComma {
+    animation-delay: 4.8s;
+}
+
+
+.webDesignMyAnimation {
+    animation-name: bounceIn, heartBeat;
+    -webkit-animation-name: bounceIn, lightSpeedIn;
+
+    animation-delay: 5.8s, 5.9s;
+    -webkit-animation-duration: 5.8s, 5.9s;
+}
+
+ .forImaginativeDiv {
+     animation-duration: 2s;
+ }
+
+ .forImaginativeDivText {
+     animation-duration: 2.3s;
+ }
+
+
 
  #linkdenIcon {
     animation-duration: 3s;

@@ -4,61 +4,54 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
+body {
+  background-color: rgb(20, 20, 20);
+  font-family: 'Ubuntu', sans-serif;
+}
+
  #titleScreen {
    height: 1000px;
-   background-color: rgb(253, 193, 2);
+   background-image: url("../../images/title-background3");
+   background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
  }
 
- #titleScreen > .animated {
-  font-size: 4em;
-  text-shadow: white 2px 2px 10px;
- }
+.titleScreenName {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+}
 
- #titleScreen2 > .animated {
-  font-size: 8em;
-  text-shadow: white 2px 2px 10px;
- }
+.centerThis {
+  margin: 0px 0px 0px 44%;
+  padding-top: 20%;
+}
 
- #titleScreen2 {
+.divName {
+  width: 200px;
+}
+
+ .titleScreen2 {
   display: flex;
   flex-direction: row;
  }
 
-#helloD {
-  margin-top: 0px;
-  margin-left: 10%;
+#myName {
+  color: rgb(48, 63, 159);
+  letter-spacing: -4px;
+  font-family: 'Rubik', sans-serif;
 }
 
-#welcome {
-  margin-left: 10%;
-}
-
-#youve {
-  margin: 0px 2% 0px 0px;
-}
-
-#come {
-margin: 0px 2% 0px 0px;
-}
-
-#to{
-margin: 0px 2% 0px 0px;
-}
-
-#the{
-margin: 0px 2% 0px 0px;
-}
-
-#right {
-margin: 0px 2% 0px 0px;
-}
-
-#place {
-margin: 0px 2% 0px 0px;
+#whatIveWorkedOn {
+  background-color: rgb(20, 20, 20);
+  border-top: 6px double #333333;
+  border-bottom: 6px double #333333;
 }
 
 .projects {
+  background-color: rgb(20, 20, 20);
   height: auto;
+  border-bottom: 6px double #333333;
 }
 
 .projectTitle {
@@ -78,29 +71,36 @@ margin: 0px 2% 0px 0px;
 }
 
 #aboutMePic {
-  height: 700px;
+  height: 900px;
   background-image: url("../../images/portfoliopic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 #slideshowPics {
   height: 400px;
 }
 
 #aboutmeInfo {
-  height: 700px;
+  height: 900px;
+  font-family: 'Rubik', sans-serif;
 }
 
 #aboutMeNameTitle {
-  font-size: 4em;
+  font-size: 6em;
   margin: 0;
 }
 
 #aboutMeParagraph {
-  font-size: 1.7em;
+  font-size: 2.2em;
+}
+
+.youTheReader {
+  color: rgb(255, 244, 154);
+  font-size: 1.8em;
+  font-family: 'Pacifico', cursive;
+
 }
 
 
@@ -125,68 +125,131 @@ margin: 0px 2% 0px 0px;
 .no-padding-bottom {padding:0px !important}
 
 
+@media only screen and (max-width: 1024px) {
+
+  .centerThis {
+    margin: 0px 0px 0px 42%;
+    padding-top: 35%;
+  }
+  
+    #titleScreen {
+      height: 900px;
+    }
+    
+    .projects {
+      height: auto;
+    }
+  
+    #aboutMePic {
+      height: 950px;
+    }
+  
+    #aboutmeInfo {
+      height: 900px;
+    }
+  
+    #aboutMeNameTitle {
+      font-size: 6em;
+      margin: 0;
+    }
+  
+    #aboutMeParagraph {
+      font-size: 2.6em;
+    }
+  
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+  .centerThis {
+    margin: 0px 0px 0px 35%;
+    padding-top: 44%;
+  }
+  
+    #titleScreen {
+      height: 900px;
+    }
+    
+    .projects {
+      height: auto;
+    }
+  
+    #aboutMePic {
+      height: 700px;
+    }
+  
+    #aboutmeInfo {
+      height: 310px;
+    }
+  
+    #aboutMeNameTitle {
+      font-size: 3em;
+      margin: 0;
+    }
+  
+    #aboutMeParagraph {
+      font-size: 1.1em;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 411px) {
+
+  .centerThis {
+    margin: 0px 0px 0px 27%;
+      padding-top: 90%;
+  }
+  
+    #titleScreen {
+      height: 900px;
+    }
+    
+    .projects {
+      height: auto;
+    }
+  
+    #aboutMePic {
+      height: 400px;
+    }
+  
+    #aboutmeInfo {
+      height: 425px;
+    }
+  
+    #aboutMeNameTitle {
+      font-size: 3em;
+      margin: 0;
+    }
+  
+    #aboutMeParagraph {
+      font-size: 1.1em;
+    }
+  
+  }
+
+
+ 
+
 
 
 @media only screen and (max-width: 375px) {
 
-  #titleScreen2 {
-    display: flex;
-    flex-direction: column;
-   }
-
-  #helloD {
-    font-size: 2em;
-    margin-top: 0px;
-    margin-left: 10%;
-  }
-  
-  #welcome {
-    font-size: 3em;
-    margin-left: 10%;
-  }
-  
-  #youve {
-    font-size: 3em;
-    margin: 0px 0px 0px 10%;
-  }
-
-
-#come {
-  font-size: 3em;
-  margin: 0px 0px 0px 10%;
+.centerThis {
+  margin: 0px 0px 0px 27%;
+    padding-top: 90%;
 }
-#to{
-  font-size: 3em;
-  margin: 0px 0px 0px 10%;
-}
-
-#the{
-  font-size: 3em;
-  margin: 0px 0px 0px 10%;
-}
-
-#right {
-  font-size: 3em;
-  margin: 0px 0px 0px 10%;
-}
-
-#titleScreen > .animated {
-  font-size: 4em;
-  
- }
-
- #titleScreen2 > .animated {
-  font-size: 4em;
- }
-
-#place {
-  font-size: 3em;
-  margin: 0px 0px 0px 10%;
-}
-
 
   #titleScreen {
-    height: auto;
+    height: 900px;
   }
   
   .projects {
@@ -198,7 +261,7 @@ margin: 0px 2% 0px 0px;
   }
 
   #aboutmeInfo {
-    height: 400px;
+    height: 425px;
   }
 
   #aboutMeNameTitle {
@@ -211,6 +274,52 @@ margin: 0px 2% 0px 0px;
   }
 
 }
+
+@media only screen and (max-width: 320px) {
+
+  .centerThis {
+    margin: 0px 0px 0px 27%;
+      padding-top: 90%;
+  }
+  
+    #titleScreen {
+      height: 900px;
+    }
+    
+    .projects {
+      height: auto;
+    }
+  
+    #aboutMePic {
+      height: 400px;
+    }
+  
+    #aboutmeInfo {
+      height: 500px;
+    }
+  
+    #aboutMeNameTitle {
+      font-size: 3em;
+      margin: 0;
+    }
+  
+    #aboutMeParagraph {
+      font-size: 1.1em;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2890,7 +2999,7 @@ a {
 
 .hoverable:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .divider {
@@ -4742,7 +4851,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 {
   font-size: 4.2rem;
   line-height: 110%;
-  margin: 2.8rem 0 1.68rem 0;
+  margin: 1.68rem 0 1.68rem 0;
 }
 
 h2 {
