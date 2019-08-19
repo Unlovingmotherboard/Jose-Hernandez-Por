@@ -59,9 +59,26 @@ body {
   margin: 0;
 }
 
+#gitHubIcon {
+  margin-left: 46.5%;
+}
+
 .projectDesc {
   font-size: 1.6em;
   margin-bottom: 30px;
+}
+
+.iconDiv {
+  
+  margin-bottom: 10%;
+}
+
+#iconMarginLeft {
+  margin-left: 39.5%;
+}
+
+.powerIconsMargins {
+  margin-left: 2%;
 }
 
 .myResponsiveImages {
@@ -212,11 +229,11 @@ body {
     #titleScreen {
       height: 900px;
     }
-    
-    .projects {
-      height: auto;
+
+    #gitHubIcon {
+      margin-left: 40%;
     }
-  
+    
     #aboutMePic {
       height: 400px;
     }
@@ -252,10 +269,6 @@ body {
     height: 900px;
   }
   
-  .projects {
-    height: auto;
-  }
-
   #aboutMePic {
     height: 400px;
   }
@@ -273,6 +286,10 @@ body {
     font-size: 1.1em;
   }
 
+  #iconMarginLeft {
+    margin-left: 5.5%;
+  }
+  
 }
 
 @media only screen and (max-width: 320px) {
