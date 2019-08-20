@@ -1,24 +1,24 @@
-/*
-$(document).ready(function() {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+$(document).ready(function () {
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+var myIndex = 0;
+carousel();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+function carousel() {
+  var i;
+  var x = $(".aboutMePics");
+  console.log(x);
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-  // If element is scrolled into view, fade it in
-  $(window).scroll(function() {
 
-    $('#aboutMeAndPics').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $("#aboutMePic").addClass('slideInLeft');
-        $("#aboutmeInfo").addClass('slideInRight');
-      } 
-    });
-  });
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1
+    console.log("Reseting To First Pic")
+  }    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+  console.log(myIndex);
+}
 });
-*/
