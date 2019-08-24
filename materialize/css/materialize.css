@@ -70,7 +70,6 @@ body {
 }
 
 .iconDiv {
-  
   margin-bottom: 10%;
 }
 
@@ -128,17 +127,29 @@ body {
 
 }
 
-
 #linkden {
+  background-color: rgb(255, 183, 77);
   height: 200px;
 }
 
 #github {
+  background-color: rgb(255, 213, 79);
   height: 200px;
 }
 
 #email {
+  background-color: rgb(255, 241, 118);
   height: 200px;
+}
+
+#resume {
+  background-color: rgb(255, 204, 188);
+  height: 200px;
+}
+
+/*Trying to figure out how to dry code all the icon divs so they change background color*/
+.myIconsDiv:hover {
+background-color: #00695c;
 }
 
 .icon {
@@ -260,10 +271,6 @@ body {
     }
   
   }
-
-
- 
-
 
 
 @media only screen and (max-width: 375px) {

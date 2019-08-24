@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
 var myIndex = 0;
-carousel();
+aboutMePicsCarousel();
+liriNodePicsCarousel();
 
-function carousel() {
+function aboutMePicsCarousel() {
   var i;
   var x = $(".aboutMePics");
   console.log(x);
@@ -18,7 +19,24 @@ function carousel() {
     console.log("Reseting To First Pic")
   }    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-  console.log(myIndex);
+  setTimeout(aboutMePicsCarousel, 4000);    
+}
+
+function liriNodePicsCarousel() {
+  var i;
+  var x = $(".liriNodePics");
+  console.log(x);
+  
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1
+    console.log("Reseting To First Pic")
+  }    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(liriNodePicsCarousel, 6000);    
 }
 });
