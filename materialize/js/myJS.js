@@ -1,42 +1,41 @@
 $(document).ready(function () {
 
-var myIndex = 0;
+var aboutMePicsIndex = 0;
+var LiriNodePicsIndex = 0;
+var aboutMePicsArray;
+var LiriPicsArray;
 aboutMePicsCarousel();
 liriNodePicsCarousel();
 
 function aboutMePicsCarousel() {
   var i;
-  var x = $(".aboutMePics");
-  console.log(x);
+  aboutMePicsArray = $(".aboutMePics");
   
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  for (i = 0; i < aboutMePicsArray.length; i++) {
+    aboutMePicsArray[i].style.display = "none";  
   }
 
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1
-    console.log("Reseting To First Pic")
+  aboutMePicsIndex++;
+  if (aboutMePicsIndex > aboutMePicsArray.length) {
+    aboutMePicsIndex = 1
   }    
-  x[myIndex-1].style.display = "block";  
+  aboutMePicsArray[aboutMePicsIndex-1].style.display = "block";  
   setTimeout(aboutMePicsCarousel, 4000);    
 }
 
 function liriNodePicsCarousel() {
-  var i;
-  var x = $(".liriNodePics");
-  console.log(x);
+  var j;
+  LiriPicsArray = $(".liriNodePics");
   
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  for (j = 0; j < LiriPicsArray.length; j++) {
+    LiriPicsArray[j].style.display = "none";  
   }
 
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1
-    console.log("Reseting To First Pic")
+  LiriNodePicsIndex++;
+  if (LiriNodePicsIndex > LiriPicsArray.length) {
+    LiriNodePicsIndex = 1
   }    
-  x[myIndex-1].style.display = "block";  
+  LiriPicsArray[LiriNodePicsIndex-1].style.display = "block";  
   setTimeout(liriNodePicsCarousel, 6000);    
 }
 });
