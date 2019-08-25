@@ -10,6 +10,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" type="text/css" href="materialize/css/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -78,13 +86,24 @@
             <section id="liriNode">
                 <div class="col s12 xl12 projects">
                     <p class="projectTitle center-align">Liri.Js</p>
-                    <a id="gitHubIcon" target="_blank" rel="noopener noreferrer" href="https://github.com/Unlovingmotherboard/liri-node-app"><img
+                    <a id="gitHubIcon" target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Unlovingmotherboard/liri-node-app"><img
                             src="./images/icons8-gradient-line-64.png" alt=""></a>
-                    <p class="projectDesc center-align">LIRI is a a command line node app that takes in parameters and gives you back data from <a target="_blank" rel="noopener noreferrer" href="https://developer.spotify.com/documentation/web-api/">Spotify API</a>, <a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" href="https://www.omdbapi.com/">OMdb API</a>, and <a target="_blank" rel="noopener noreferrer" href="https://manager.bandsintown.com/support/bandsintown-api">Bands In Town API</a>.</p>
-                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable" src="./images/LiriNode/concert-this screenshot.png" alt="">
-                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable" src="./images/LiriNode/movie-this screenshot.png" alt="">
-                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable" src="./images/LiriNode/spotify screenshot 1.png" alt="">
-                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable" src="./images/LiriNode/do what it says screenshot.png" alt="">
+                    <p class="projectDesc center-align">LIRI is a a command line node app that takes in parameters and
+                        gives you back data from <a target="_blank" rel="noopener noreferrer"
+                            href="https://developer.spotify.com/documentation/web-api/">Spotify API</a>, <a
+                            target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"
+                            href="https://www.omdbapi.com/">OMdb API</a>, and <a target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://manager.bandsintown.com/support/bandsintown-api">Bands In Town API</a>.</p>
+                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                        src="./images/LiriNode/concert-this screenshot.png" alt="">
+                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                        src="./images/LiriNode/movie-this screenshot.png" alt="">
+                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                        src="./images/LiriNode/spotify screenshot 1.png" alt="">
+                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                        src="./images/LiriNode/do what it says screenshot.png" alt="">
                 </div>
             </section>
 
@@ -134,7 +153,7 @@
     <div id="contact">
         <div class="row">
             <div class="col s12 xl3 icon myIconsDiv" id="linkden">
-                <a target="_blank" rel="noopener noreferrer"
+                <a class="linkdenLink" target="_blank" rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/jose-hernandez-97b09216b/"><img
                         src="./images/iconfinder_square-linkedin_317725.png" alt="" class="animated swing"
                         id="linkdenIcon"></a>
@@ -165,6 +184,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/myJS.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    
 
 </body>
 
