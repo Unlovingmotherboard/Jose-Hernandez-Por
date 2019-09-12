@@ -12,11 +12,24 @@ body {
 
  #titleScreen {
    height: 1000px;
+
    background-image: url("../../images/title-background3");
-   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+   background-position: center; 
+  background-repeat: no-repeat; 
   background-size: cover;
  }
+
+ video {
+  position: absolute;
+   
+  /* Vertical and Horizontal center*/
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ #titleScreenNoBackground {
+  height: 1000px;
+}
 
 .titleScreenName {
   margin: 0px;
@@ -106,6 +119,7 @@ body {
 }
 
 #aboutmeInfo {
+  background-color: rgb(48, 63, 159);
   height: 900px;
   font-family: 'Rubik', sans-serif;
   z-index: 1;
@@ -147,16 +161,27 @@ body {
   height: 200px;
 }
 
+.centeredTextDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredText {
+  font-size: 3em;
+}
+
 /*Trying to figure out how to dry code all the icon divs so they change background color*/
 .myIconsDiv:hover {
 background-color: #00695c;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
 
 .no-padding-bottom {padding:0px !important}
 

@@ -14,6 +14,11 @@
     <!--Link to Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
     <!--Link to Firebase-->
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
@@ -37,6 +42,15 @@
 <body>
     <div>
         <div class="col s12 xl12" id="titleScreen">
+<!--
+            <video autoplay muted loop>
+                <source src="./images/Video Backgrounds/background1.mp4" type="video/mp4">
+            </video>
+            -->
+            <button class="waves-effect waves-light btn-large" id="theme1">Theme 1</button>
+
+            <button class="waves-effect waves-light btn-large" id="theme2">Theme 2</button>
+
             <div class="col centerThis">
                 <div class="col xl12">
                     <div class="divName">
@@ -58,8 +72,8 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-    </div>
     </div>
     <!--Title-->
 
@@ -77,16 +91,11 @@
                     <p class="projectDesc center-align">This web application helps hikers choose a trail and date based
                         on
                         the user's destination and weather conditions.</p>
-                    <a target="_blank" rel="noopener noreferrer" href="https://joshmunoz63.github.io/project-1/"><img
-                            src="./images/home screen test 1.png" alt=""
-                            class="responseive-img myResponsiveImages hoverable"></a>
-                    <!--
-                                    <div class="iconDiv">
-                                            <img id="iconMarginLeft" src="./images/boostrap.png" alt="">
-                                            <img class="powerIconsMargins" src="./images/504-5048925_jquery-icon-jquery-logo-png.png" alt="">
-                                            <img class="powerIconsMargins" src="./images/openweather-negative-logo-RGB.png" alt="">
-                                    </div>
-                                    -->
+                    <div class="imageDiv">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://joshmunoz63.github.io/project-1/"><img src="./images/home screen test 1.png"
+                                alt="" class="responseive-img myResponsiveImages hoverable"></a>
+                    </div>
                 </div>
             </section>
 
@@ -103,14 +112,49 @@
                             href="https://www.omdbapi.com/">OMdb API</a>, and <a target="_blank"
                             rel="noopener noreferrer"
                             href="https://manager.bandsintown.com/support/bandsintown-api">Bands In Town API</a>.</p>
-                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
-                        src="./images/LiriNode/concert-this screenshot.png" alt="">
-                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
-                        src="./images/LiriNode/movie-this screenshot.png" alt="">
-                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
-                        src="./images/LiriNode/spotify screenshot 1.png" alt="">
-                    <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
-                        src="./images/LiriNode/do what it says screenshot.png" alt="">
+                    <div class="imageDiv">
+                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                            src="./images/LiriNode/concert-this screenshot.png" alt="">
+                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                            src="./images/LiriNode/movie-this screenshot.png" alt="">
+                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                            src="./images/LiriNode/spotify screenshot 1.png" alt="">
+                        <img class="animated fadeIn liriNodePics responseive-img myResponsiveImages hoverable"
+                            src="./images/LiriNode/do what it says screenshot.png" alt="">
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="Amazon-in-node">
+                <div class="col s12 xl12 projects">
+                    <p class="projectTitle center-align">Amazon-In-Node.Js</p>
+                    <a id="gitHubIcon" target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/Unlovingmotherboard/liri-node-app"><img
+                            src="./images/icons8-gradient-line-64.png" alt=""></a>
+                    <p class="projectDesc center-align">Amazon-in-node is a node application that uses MySQL and
+                        Inquirer to create a mock up amazon store front in Node.</p>
+                    <div class="imageDiv">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-customer-screenshot-1.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-customer-screenshot-2.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-manager-screenshot-1.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-manager-screenshot-6.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-manager-screenshot-7.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-manager-screenshot-8.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-supervisor-screenshot-1.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-supervisor-screenshot-2.PNG" alt="">
+                        <img class="animated fadeIn Amazon-in-node responseive-img myResponsiveImages hoverable"
+                            src="./images/Amazon-In-Node/amazon-supervisor-screenshot-3.PNG" alt="">
+                    </div>
+
                 </div>
             </section>
 
@@ -120,8 +164,11 @@
                     <a id="gitHubIcon" target="_blank" rel="noopener noreferrer" href=""><img
                             src="./images/icons8-gradient-line-64.png" alt=""></a>
                     <p class="projectDesc center-align">Description</p>
-                    <a href=""><img src="./images/placeholder.jpg" alt=""
-                            class="responseive-img myResponsiveImages hoverable"></a>
+                    <div class="imageDiv">
+                        <a href=""><img src="./images/placeholder.jpg" alt=""
+                                class="responseive-img myResponsiveImages hoverable"></a>
+                    </div>
+
                 </div>
             </section>
         </div>
@@ -142,7 +189,7 @@
                 <img class="animated fadeIn aboutMePics" src="./images/SeattleTrip/seattle3.jpg" alt="">
             </div>
 
-            <div class="col s12 xl6 indigo darken-2 animated" id="aboutmeInfo">
+            <div class="col s12 xl6 animated" id="aboutmeInfo">
                 <p id="aboutMeNameTitle" class="center-align">JOSE MARIN HERNANDEZ</p>
                 <p class="center-align" id="aboutMeParagraph">Who is JOSE? He's more than a Full-Stack Web Developer.
                     He's a photographer, photoshop enthusiast, audiophile, weight lifter, INFJ, man of his word, and
@@ -172,8 +219,10 @@
             </div>
 
             <div class="col s12 xl3 icon myIconsDiv" id="email">
-                <a href="mailto: jmhern25@yahoo.com"><img src="./images/iconfinder_39_Email_Marketing_1688837.png"
-                        alt="" class="animated swing" id="emailIcon"></a>
+                <div>
+                    <a href="mailto:jmhern25@yahoo.com"><img src="./images/iconfinder_39_Email_Marketing_1688837.png"
+                            alt="" class="animated swing" id="emailIcon"></a>
+                </div>
             </div>
 
             <div class="col s12 xl3 icon myIconsDiv" id="resume">
@@ -191,7 +240,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/myJS.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    
+
 
 </body>
 
