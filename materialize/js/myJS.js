@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  var aboutMePicsIndex = 0;
+  var LiriNodePicsIndex = 0;
+  var AmazonIndex = 0;
+  var aboutMePicsArray;
+  var LiriPicsArray;
+  var AmazonArray;
+
+
+  aboutMePicsCarousel();
+  liriNodePicsCarousel();
+  AmazonPicsCarousel();
 
   ScrollReveal().reveal('.projectTitle', { delay: 500 });
   ScrollReveal().reveal('#gitHubIcon', { delay: 800 });
@@ -14,70 +25,7 @@ $(document).ready(function () {
   ScrollReveal().reveal('#emailIcon', { delay: 1300 });
   ScrollReveal().reveal('#resumeIcon', { delay: 1400 });
 
-
-  var firebaseConfig = {
-    apiKey: "AIzaSyCp4SRVYUy1bIhVReZFiQtPPMyuY-aejb0",
-    authDomain: "myportfolio-analytics.firebaseapp.com",
-    databaseURL: "https://myportfolio-analytics.firebaseio.com",
-    projectId: "myportfolio-analytics",
-    storageBucket: "",
-    messagingSenderId: "1067841937772",
-    appId: "1:1067841937772:web:e6ee9b6eae958f70"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-64399820-1');
-
-
-  /*
-
-  (function (i, s, o, g, r, a, m) {
-  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-    (i[r].q = i[r].q || []).push(arguments)
-  },
-  i[r].l = 1 * new Date(); a = s.createElement(o),
-    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
   
-  ga('create', 'UA-XXXXX-Y', 'auto', "TRACKING-ID");
-  ga('send', 'pageview');
-
-  $(".linkdenLink").on("click", function (event) {
-    event.preventDefault();
-    ga('send', 'event', {
-      'hitCallback': function() {
-        console.log("Hit Sent");
-      }
-    });
-});
-
-  
-  ga(function() {
-    // Logs the tracker created above to the console.
-    var clientId = ga.getByName('TRACKING-ID').get('clientId');
-    console.log(clientId);
-  });
-  
-*/
-
-
-  const fireBaseDatabase = firebase.database();
-  var aboutMePicsIndex = 0;
-  var LiriNodePicsIndex = 0;
-  var AmazonIndex = 0;
-  var aboutMePicsArray;
-  var LiriPicsArray;
-  var AmazonArray;
-  aboutMePicsCarousel();
-  liriNodePicsCarousel();
-  AmazonPicsCarousel();
-
   function aboutMePicsCarousel() {
     var i;
     aboutMePicsArray = $(".aboutMePics");
@@ -119,14 +67,22 @@ $(document).ready(function () {
     }
 
     AmazonIndex++;
-    if (AmazonArray > AmazonArray.length) {
-      AmazonArray = 1
+    if (AmazonIndex > AmazonArray.length) {
+      AmazonIndex = 1
     }
     AmazonArray[AmazonIndex - 1].style.display = "block";
     setTimeout(AmazonPicsCarousel, 6000);
   }
 
-  $(document).on("click", "#theme1", function(){
+//Try figuring out how to make it so you only have 1 button that changes the theme rather than 2.
+
+
+$(document).on("click", ".themeButtons", function(){
+  
+  if($(".themeButtons").hasClass("white")) {
+    $(".themeButtons").removeClass("white");
+    $(".themeButtons").addClass("black")
+
     $('body').css("background-color", "rgb(255, 255, 255)");
     $('body').css("color", "rgb(110, 122, 147)");
     $("#titleScreen").css("background-image", 'url("images/whiteTheme/background2.gif")');
@@ -141,9 +97,10 @@ $(document).ready(function () {
     $("#email").css("background-color", "rgb(110, 122, 147)");
     $("#github").css("background-color", "rgb(213, 213, 213)");
     $("#linkden").css("background-color", "rgb(255, 255, 255)");
-  });
+  } else if($(".themeButtons").hasClass("black")) {
+    $(".themeButtons").removeClass("black");
+    $(".themeButtons").addClass("white")
 
-  $(document).on("click", "#theme2", function(){
     $('body').css("background-color", "");
     $('body').css("color", "");
     $("#titleScreen").css("background-image", 'url("images/title-background3")');
@@ -157,6 +114,7 @@ $(document).ready(function () {
     $("#email").css("background-color", "");
     $("#github").css("background-color", "");
     $("#linkden").css("background-color", "");
+  }
+    
   });
-
 });

@@ -10,6 +10,10 @@ body {
   z-index: 1;
 }
 
+.themeButtons {
+  margin: 10px;
+}
+
  #titleScreen {
    height: 1000px;
 
@@ -132,6 +136,7 @@ body {
 
 #aboutMeParagraph {
   font-size: 2.2em;
+  padding: 10px;
 }
 
 .youTheReader {
